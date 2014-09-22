@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require 'sjson2srt'
+
+begin
+  puts Sjson2srt::Converter.new(STDIN.read).convert
+rescue => e
+  $stderr.puts "ERROR: #{e.message}"
+  exit 1
+end

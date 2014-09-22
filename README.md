@@ -14,13 +14,20 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
+Or install it yourself:
 
     $ gem install sjson2srt
 
 ## Usage
 
-TODO: Write usage instructions here
+In a ruby program:
+
+    srt_content = Sjson2srt::Converter.new(sjson_string).convert
+
+This gem will install an executable named `sjson2srt` suitable for use in a
+unix pipeline, thusly:
+
+    cat file.sjson | sjson2srt > output.srt
 
 ## Contributing
 
@@ -32,7 +39,7 @@ TODO: Write usage instructions here
 
 ## Contributors
 
-DJCP
+* DJCP
 
 ## Copyright
 
