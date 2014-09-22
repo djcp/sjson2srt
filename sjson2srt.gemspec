@@ -9,9 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Dan Collis-Puro"]
   spec.email         = ["dan_collis-puro@harvard.edu"]
   spec.summary       = %q{Convert the sjson captioning format to the srt format}
-  spec.description   = %q{Convert the sjson captioning format to the srt format. \
-This includes an executable named "sjson2srt" that accepts sjson on STDIN and \
-emits srt on STDOUT, suitable for use in a unix pipeline.}
+  spec.description   = %q{Convert the sjson captioning format to the srt format.  This includes an executable named "sjson2srt" that accepts sjson on STDIN and emits srt on STDOUT, suitable for use in a unix pipeline.}
   spec.homepage      = "https://github.com/djcp/sjson2srt"
   spec.license       = "MIT"
 
